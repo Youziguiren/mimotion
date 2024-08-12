@@ -6,7 +6,7 @@ on:
   #pull_request:
   #  branches: [ main ]
   schedule:
-    - cron: '12 0,4,7,10,-12,-14 * * *'
+    - cron: '12 0,4,7,10,-13,-14 * * *'
   watch:
     types: started
   workflow_dispatch:
@@ -35,3 +35,4 @@ jobs:
           open_get_weather='${{ secrets.OPEN_GET_WEATHER }}'
           area='${{ secrets.AREA }}'
           python3 main.py ${user} ${passwd} ${open_get_weather} ${area}
+3
